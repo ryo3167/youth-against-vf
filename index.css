@@ -291,16 +291,20 @@
 
 
 /* Blog Page Grid Background */
-.blog-page-body {
-  background-color: var(--color-surface);
-  background-size: 30px 30px;
-  background-image: linear-gradient(var(--color-border) 1px, transparent 1px),
-                    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+.blog-page-body, 
+.blog-header {
+  background-color: #ffffff; /* Or whatever your main background color is */
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  background-position: center center; /* Ensures the grid starts from the same spot */
 }
 
 .blog-header {
-  text-align: center;
-  padding: var(--spacing-4xl) var(--spacing-xl);
+  border-bottom: 1px solid var(--grid-color); /* Optional: a nice separator */
+  margin: 0;
+  padding: 40px 20px;
 }
 
 .blog-feed-container {

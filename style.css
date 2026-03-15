@@ -87,6 +87,8 @@
   --dl-layout-radius-inputradius: 24px;
   --dl-layout-radius-buttonradius: 24px;
   --dl-layout-space-oneandhalfunits: 24px;
+  --grid-size: 40px; /* Adjust this number to make the squares bigger or smaller */
+  --grid-color: rgba(0, 0, 0, 0.05);
 }
  
 .button {
