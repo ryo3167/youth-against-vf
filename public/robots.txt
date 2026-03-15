@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://serpentine-likely-boar-h5on1s.teleporthq.app/sitemap.xml

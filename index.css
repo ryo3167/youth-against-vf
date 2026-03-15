@@ -1,0 +1,353 @@
+.navigation-wrapper {
+  display: contents;
+}
+ 
+.navigation-container1 {
+  display: contents;
+}
+ 
+.navigation-container2 {
+  display: none;
+}
+ 
+.navigation-container3 {
+  display: contents;
+}
+ 
+.navigation-container4 {
+  display: none;
+}
+ 
+.navigation-container5 {
+  display: contents;
+}
+ 
+.navigation-container6 {
+  display: none;
+}
+ 
+.navigation-container7 {
+  display: contents;
+}
+
+.footer-wrapper {
+  display: contents;
+}
+ 
+.footer-container1 {
+  display: contents;
+}
+ 
+.footer-container2 {
+  display: none;
+}
+ 
+.footer-container3 {
+  display: contents;
+}
+ 
+.footer-container4 {
+  display: none;
+}
+ 
+.footer-container5 {
+  display: contents;
+}
+
+.home-container1 {
+  width: 100%;
+  min-height: 100vh;
+}
+ 
+.home-container2 {
+  display: none;
+}
+ 
+.home-container3 {
+  display: contents;
+}
+ 
+.home-container4 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.home-icon28 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.home-text33 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.impact-numbers {
+    display: none !important;
+}
+
+/* Container to hold the cards and allow them to wrap on mobile */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Each card takes 30% width on desktop, 100% on mobile */
+.team-card {
+  flex: 1 1 300px; /* Grows/shrinks, but tries to stay around 300px */
+  max-width: 350px;
+  display: flex;
+}
+
+/* Ensure the box stretches to fill the card height */
+.team-card .how-it-works-box {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Scalable Image Container */
+.team-image-container {
+  width: 90%; /* Scales based on the size of the bubble */
+  max-width: 200px; /* Prevents it from getting huge on big screens */
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.team-img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Keeps it a perfect square/circle */
+  object-fit: cover;
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid var(--color-on-surface);
+}
+
+/* Hide original arrows and numbers from the source layout */
+.how-it-works-arrow, .how-it-works-number {
+  display: none !important;
+}
+
+/* --- Collaboration Marquee --- */
+
+.collaboration-section {
+  padding: 80px 0;
+  background-color: var(--color-surface);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collaboration-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* --- Final Seamless Infinite Marquee --- */
+/* --- Final Seamless Infinite Marquee --- */
+.logo-marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  /* Adjust this gap to change space between the two ULs */
+  gap: 80px; 
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Adjust this gap to change space between logos within the UL */
+  gap: 80px; 
+  flex-shrink: 0;
+  min-width: 100%;
+  justify-content: space-around;
+  animation: scroll-ul 25s linear infinite;
+}
+
+@keyframes scroll-ul {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Moves exactly the width of one UL plus the gap between them */
+    transform: translateX(calc(-100% - 80px));
+  }
+}
+
+.partner-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+  /* Removed grayscale filter and opacity to show original colors */
+  object-fit: contain;
+}
+
+.partner-item {
+  flex-shrink: 0;
+}
+
+/* --- Fix for the white line and section spacing --- */
+
+/* --- Fix for the white line and setting the background to Teal --- */
+
+/* --- Valley Fever Section: Lighter Teal Background --- */
+/* --- Duplicate of Our Mission Style --- */
+/* --- Styling for the Valley Fever Section --- */
+
+/* --- Lighter Teal Section Background --- */
+.what-is-vf-section {
+  background-color: var(--color-surface-elevated); /* Lighter teal theme color */
+  padding: var(--dl-layout-space-threeunits) 0;
+  margin-top: -1px; /* Removes the white gap line */
+}
+
+/* --- The Solid Teal Box (The "Shadow" box) --- */
+.vf-teal-backplate {
+  background-color: var(--color-secondary) !important; /* Darker solid teal */
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  /* Adjusting position to look like the Mission section backplate */
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+/* --- Ensuring the White Paper Box sits correctly inside --- */
+.vf-teal-backplate .mission-values-card {
+  margin: 10px; /* Creates the border look of the teal box underneath */
+  width: 100%;
+  background-color: var(--color-surface); /* White background */
+}
+
+/* --- Centering the Button --- */
+.vf-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-2xl);
+}
+
+/* Fix for seamless transition to the mission section */
+#mission {
+  margin-top: -1px;
+}
+
+
+.nav-blog-wrapper {
+  margin-left: auto; /* A backup to ensure it stays right */
+}
+
+.blog-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-secondary); /* Your brand teal */
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-card);
+  text-decoration: none;
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  /* That offset "box shadow" look you like */
+  box-shadow: 4px 4px 0px rgba(26, 165, 142, 0.3); 
+}
+
+.blog-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0px rgba(26, 165, 142, 0.4);
+}
+
+
+
+/* Blog Page Grid Background */
+.blog-page-body {
+  background-color: var(--color-surface);
+  background-size: 30px 30px;
+  background-image: linear-gradient(var(--color-border) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--color-border) 1px, transparent 1px);
+}
+
+.blog-header {
+  text-align: center;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+}
+
+.blog-feed-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: var(--spacing-4xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+}
+
+/* Yellow Offset Box Effect */
+.blog-post-card {
+  position: relative;
+  width: 100%;
+}
+
+.blog-yellow-backplate {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-accent); /* The yellow from snapshots */
+  border-radius: var(--border-radius-lg);
+  z-index: 1;
+}
+
+.blog-post-inner {
+  position: relative;
+  z-index: 2;
+  background: var(--color-surface);
+  border: 3px solid var(--color-on-surface);
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+}
+
+.blog-category {
+  font-family: var(--font-family-heading);
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: var(--font-size-xs);
+}
+
+.blog-post-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-2xl);
+  margin: var(--spacing-sm) 0;
+}
